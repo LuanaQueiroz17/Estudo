@@ -1,1 +1,21 @@
-aaaa
+main::IO()
+comissao::Double->Double
+comissao ved
+  |ved <10000 = (ved*0.03)
+  |ved >=10000 && ved<= 50000 = (ved*0.04)
+  |otherwise = (ved*0.05)
+  
+main = do
+putStrLn ("quanto o vendedor vendeu? ")
+ved<-readLn
+
+putStrLn ("O pagamento do vendedor é:  "++show(comissao ved))
+
+
+--corrigido e correto
+
+
+
+
+  --aprovado(A,B):-alun(A),cursa(A,B),materia(B),materiaa(B,A).
+  -- reprovado(A,B):-alun(A),cursa(A,B),materia(B),materiaa(B,A).
